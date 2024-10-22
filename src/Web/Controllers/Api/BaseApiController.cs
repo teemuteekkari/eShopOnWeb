@@ -6,4 +6,10 @@ namespace Microsoft.eShopWeb.Web.Controllers.Api;
 [Route("api/[controller]/[action]")]
 [ApiController]
 public class BaseApiController : ControllerBase
-{ }
+{
+
+    private string JoinTwoStrings(string one, string two) {
+        var NewString = string.Concat(one, two);
+        return NewString;
+    }
+ }
